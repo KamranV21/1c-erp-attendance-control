@@ -22,7 +22,7 @@
 		<Metadata name="Catalog.Сотрудники.Form.ФормаЭлемента" id="6e0b5290-81d9-4ff0-b408-92bf65fd931a" configVersion="aff19f323c5235dc321809c7219886fffc4087c6"/>
 		<Metadata name="Catalog.Сотрудники.Form.ФормаЭлемента.Form" id="6e0b5290-81d9-4ff0-b408-92bf65fd931a.0" configVersion="7eeef1152e8ea2913830eacdf71aa05942daeeae"/>
 		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудников" id="902d495c-4ee6-421a-95f7-77eb02a756bc" configVersion="c8e635ff2ca71e1ab5d7b832d32b8e6ee235c129"/>
-		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудников.Module" id="902d495c-4ee6-421a-95f7-77eb02a756bc.0" configVersion="b05026dffa8239b09308d4ae8539175e033e0cfc"/>
+		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудников.Module" id="902d495c-4ee6-421a-95f7-77eb02a756bc.0" configVersion="e34b3493b8ebae8e5d51bd9d7dc4cb7ef3916f0e"/>
 		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудниковВызовСервера" id="e4cd6084-bb25-401e-9382-cbbd1a92b621" configVersion="1adb3eb143e60ac107b28c8eb0f02b8eae63120c"/>
 		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудниковВызовСервера.Module" id="e4cd6084-bb25-401e-9382-cbbd1a92b621.0" configVersion="915ea866b6380f9c8a0fa18eb380f8eb945194b3"/>
 		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудниковКлиентСервер" id="f8e4c212-63ad-4f2a-a04c-b95d118a272c" configVersion="a2ce0a3e38beeb54166c49e0a5f164f74ed5dae1"/>
