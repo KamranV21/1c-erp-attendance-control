@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="f88a0968-e8ed-40f0-888a-f9b01d45408a">
+		<Name>Явка</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Явка</Description>
+		<IsFolder>false</IsFolder>
+		<ExtensionState>AdoptedCheck</ExtensionState>
+	</Item>
+	<Item id="7af8a37a-f3af-4e92-b676-eaa981a0cf5b">
+		<Name>РабочееВремя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Рабочее время</Description>
+		<IsFolder>false</IsFolder>
+		<ExtensionState>AdoptedCheck</ExtensionState>
+	</Item>
+</PredefinedData>

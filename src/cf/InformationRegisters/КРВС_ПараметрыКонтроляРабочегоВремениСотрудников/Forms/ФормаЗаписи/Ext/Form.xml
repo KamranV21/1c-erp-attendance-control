@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="ПодсказкаНастройки" id="23">
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для корректной работы рекомендуется включить использование внутрисменных отсутствий.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Düzgün iş üçün növbədaxili yoxluqların istifadəsini aktivləşdirmək tövsiyə olunur.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>For correct operation, it is recommended to enable the use of in-shift absences.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПодсказкаНастройкиКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="ПодсказкаНастройкиРасширеннаяПодсказка" id="25"/>
+		</LabelDecoration>
+		<InputField name="Период" id="1">
+			<DataPath>Запись.Period</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Организация" id="4">
+			<DataPath>Запись.Организация</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>28</MaxWidth>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="ГруппаОтсутствия" id="10">
+			<Group>AlwaysHorizontal</Group>
+			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтсутствияРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="ДопустимоеВремяБезОбоснований" id="7">
+					<DataPath>Запись.ДопустимыеЧасыБезОбоснований</DataPath>
+					<Width>8</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<SpinButton>true</SpinButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДопустимоеВремяБезОбоснованийКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДопустимоеВремяБезОбоснованийРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<LabelDecoration name="ДекорацияМинуты" id="12">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ч.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>az</v8:lang>
+							<v8:content>s.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>h.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияМинутыКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ДекорацияМинутыРасширеннаяПодсказка" id="14"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОкругления" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет часов посещения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Accounting for visiting hours</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Davamiyyət saatlarının uçotu</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаОкругленияРасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<InputField name="ТочностьЧасовПосещения" id="17">
+					<DataPath>Запись.ТочностьЧасовПосещения</DataPath>
+					<Width>8</Width>
+					<ChoiceButton>true</ChoiceButton>
+					<SpinButton>true</SpinButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТочностьЧасовПосещенияКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТочностьЧасовПосещенияРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ВариантОкругления" id="20">
+					<DataPath>Запись.ВариантОкругления</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВариантОкругленияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ВариантОкругленияРасширеннаяПодсказка" id="22"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

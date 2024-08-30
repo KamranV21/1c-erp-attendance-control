@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<ExternalDataSource uuid="bfa4261c-0b5e-4b4f-bc66-83b3c7d3a1de">
+		<InternalInfo>
+			<xr:GeneratedType name="ExternalDataSourceManager.КРВС_Hikvision" category="Manager">
+				<xr:TypeId>1eb3f507-ec6f-4445-b712-7b97fd0c96df</xr:TypeId>
+				<xr:ValueId>ce65d6b7-8ee8-4191-8805-a495d18a204a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTablesManager.КРВС_Hikvision" category="TablesManager">
+				<xr:TypeId>5e588fee-41ec-482a-a8f0-00b044edb766</xr:TypeId>
+				<xr:ValueId>c0d5c202-7b63-4727-8748-faee7f67201c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceCubesManager.КРВС_Hikvision" category="CubesManager">
+				<xr:TypeId>0be252e6-07a4-4113-aa45-51ac51c0f5ae</xr:TypeId>
+				<xr:ValueId>7eb0e844-282a-4008-a7a2-9c2109137466</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>КРВС_Hikvision</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>399803f9-7fb1-4a1b-a028-f718dea5d512</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Table>dbo_AttendanceTable</Table>
+		</ChildObjects>
+	</ExternalDataSource>
+</MetaDataObject>

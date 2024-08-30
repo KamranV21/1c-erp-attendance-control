@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Enum uuid="dc606c1e-4f83-4626-9dbd-bc7fec614f82">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СостоянияСотрудника" category="Ref">
+				<xr:TypeId>d18509ff-7a69-44c0-926d-ed2fd23c928b</xr:TypeId>
+				<xr:ValueId>d7db84e4-a8cf-44b0-8351-1151e43994dd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СостоянияСотрудника" category="Manager">
+				<xr:TypeId>8629f37b-b806-406e-9016-6b876fce50ee</xr:TypeId>
+				<xr:ValueId>5deae8a8-9580-4efd-8a11-593a3569986e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СостоянияСотрудника" category="List">
+				<xr:TypeId>c4e80b8a-744a-47e5-815f-f212e4b1c04a</xr:TypeId>
+				<xr:ValueId>936c1a2e-c9f4-4a9c-8945-f91018b1cce2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СостоянияСотрудника</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>99da29db-f308-4ac4-bf1f-cabf9261dc09</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="bcf405ce-2d8c-4d3b-95a6-51d6dd7df24c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Работа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7ecdfea3-ae5a-4a04-858b-e2ecce624162</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

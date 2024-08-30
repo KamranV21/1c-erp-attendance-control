@@ -1,0 +1,1018 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ДатаНомер" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата номер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Date number</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>az</v8:lang>
+							<v8:content>Tarix nömrə</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ДатаНомерExtendedTooltip" id="7"/>
+					<ChildItems>
+						<InputField name="Дата" id="8">
+							<DataPath>Объект.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ДатаExtendedTooltip" id="10"/>
+							<Events>
+								<Event name="OnChange">ДатаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Номер" id="11">
+							<DataPath>Объект.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="НомерКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="НомерExtendedTooltip" id="13"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Организация" id="14">
+					<DataPath>Объект.Организация</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="МесяцРегистрацииСтрокой" id="169">
+					<DataPath>МесяцРегистрацииСтрокой</DataPath>
+					<Width>13</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>true</ChoiceButton>
+					<SpinButton>true</SpinButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МесяцРегистрацииСтрокойКонтекстноеМеню" id="170"/>
+					<ExtendedTooltip name="МесяцРегистрацииСтрокойРасширеннаяПодсказка" id="171"/>
+					<Events>
+						<Event name="OnChange">МесяцРегистрацииСтрокойПриИзменении</Event>
+						<Event name="AutoComplete">МесяцРегистрацииСтрокойАвтоПодбор</Event>
+						<Event name="StartChoice">ПериодРегистрацииНачалоВыбора</Event>
+						<Event name="Tuning">МесяцРегистрацииСтрокойРегулирование</Event>
+						<Event name="TextEditEnd">МесяцРегистрацииСтрокойОкончаниеВводаТекста</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДанныеОВремени" id="164">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДанныеОВремениРасширеннаяПодсказка" id="165"/>
+			<ChildItems>
+				<Table name="ДанныеОВремени" id="17">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ДанныеОВремени</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДанныеОВремениКонтекстноеМеню" id="18"/>
+					<AutoCommandBar name="ДанныеОВремениКоманднаяПанель" id="19">
+						<ChildItems>
+							<Button name="ДанныеОВремениЗаполнитьИзHikvision" id="137">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗаполнитьИзHikvision</CommandName>
+								<ExtendedTooltip name="ДанныеОВремениЗаполнитьИзHikvisionРасширеннаяПодсказка" id="138"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ДанныеОВремениРасширеннаяПодсказка" id="20"/>
+					<SearchStringAddition name="ДанныеОВремениСтрокаПоиска" id="21">
+						<AdditionSource>
+							<Item>ДанныеОВремени</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДанныеОВремениСтрокаПоискаКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="ДанныеОВремениСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДанныеОВремениСостояниеПросмотра" id="24">
+						<AdditionSource>
+							<Item>ДанныеОВремени</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДанныеОВремениСостояниеПросмотраКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="ДанныеОВремениСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДанныеОВремениУправлениеПоиском" id="27">
+						<AdditionSource>
+							<Item>ДанныеОВремени</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДанныеОВремениУправлениеПоискомКонтекстноеМеню" id="28"/>
+						<ExtendedTooltip name="ДанныеОВремениУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateCell">ДанныеОВремениПриАктивизацииЯчейки</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ДанныеОВремениНомерСтроки" id="30">
+							<DataPath>Объект.ДанныеОВремени.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДанныеОВремениНомерСтрокиКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ДанныеОВремениНомерСтрокиРасширеннаяПодсказка" id="32"/>
+						</LabelField>
+						<InputField name="ДанныеОВремениСотрудник" id="33">
+							<DataPath>Объект.ДанныеОВремени.Сотрудник</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениСотрудникКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ДанныеОВремениСотрудникРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов1" id="36">
+							<DataPath>Объект.ДанныеОВремени.Часов1</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>1</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>1</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов1КонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов1РасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов2" id="39">
+							<DataPath>Объект.ДанныеОВремени.Часов2</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>2</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>2</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>2</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов2КонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов2РасширеннаяПодсказка" id="41"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов3" id="42">
+							<DataPath>Объект.ДанныеОВремени.Часов3</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>3</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>3</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>3</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов3КонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов3РасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов4" id="45">
+							<DataPath>Объект.ДанныеОВремени.Часов4</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>4</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>4</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>4</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов4КонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов4РасширеннаяПодсказка" id="47"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов5" id="48">
+							<DataPath>Объект.ДанныеОВремени.Часов5</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>5</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>5</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>5</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов5КонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов5РасширеннаяПодсказка" id="50"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов6" id="51">
+							<DataPath>Объект.ДанныеОВремени.Часов6</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>6</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>6</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>6</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов6КонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов6РасширеннаяПодсказка" id="53"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов7" id="54">
+							<DataPath>Объект.ДанныеОВремени.Часов7</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>7</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>7</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>7</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов7КонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов7РасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов8" id="57">
+							<DataPath>Объект.ДанныеОВремени.Часов8</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>8</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>8</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>8</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов8КонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов8РасширеннаяПодсказка" id="59"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов9" id="60">
+							<DataPath>Объект.ДанныеОВремени.Часов9</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>9</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>9</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>9</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов9КонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов9РасширеннаяПодсказка" id="62"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов10" id="63">
+							<DataPath>Объект.ДанныеОВремени.Часов10</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>10</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>10</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>10</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов10КонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов10РасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов11" id="66">
+							<DataPath>Объект.ДанныеОВремени.Часов11</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>11</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>11</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>11</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов11КонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов11РасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов12" id="69">
+							<DataPath>Объект.ДанныеОВремени.Часов12</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>12</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>12</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>12</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов12КонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов12РасширеннаяПодсказка" id="71"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов13" id="72">
+							<DataPath>Объект.ДанныеОВремени.Часов13</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>13</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>13</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>13</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов13КонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов13РасширеннаяПодсказка" id="74"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов14" id="75">
+							<DataPath>Объект.ДанныеОВремени.Часов14</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>14</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>14</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>14</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов14КонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов14РасширеннаяПодсказка" id="77"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов15" id="78">
+							<DataPath>Объект.ДанныеОВремени.Часов15</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>15</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>15</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>15</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов15КонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов15РасширеннаяПодсказка" id="80"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов16" id="81">
+							<DataPath>Объект.ДанныеОВремени.Часов16</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>16</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>16</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>16</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов16КонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов16РасширеннаяПодсказка" id="83"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов17" id="84">
+							<DataPath>Объект.ДанныеОВремени.Часов17</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>17</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>17</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>17</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов17КонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов17РасширеннаяПодсказка" id="86"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов18" id="87">
+							<DataPath>Объект.ДанныеОВремени.Часов18</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>18</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>18</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>18</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов18КонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов18РасширеннаяПодсказка" id="89"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов19" id="90">
+							<DataPath>Объект.ДанныеОВремени.Часов19</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>19</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>19</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>19</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов19КонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов19РасширеннаяПодсказка" id="92"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов20" id="93">
+							<DataPath>Объект.ДанныеОВремени.Часов20</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>20</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>20</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>20</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов20КонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов20РасширеннаяПодсказка" id="95"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов21" id="96">
+							<DataPath>Объект.ДанныеОВремени.Часов21</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>21</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>21</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>21</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов21КонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов21РасширеннаяПодсказка" id="98"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов22" id="99">
+							<DataPath>Объект.ДанныеОВремени.Часов22</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>22</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>22</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>22</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов22КонтекстноеМеню" id="100"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов22РасширеннаяПодсказка" id="101"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов23" id="102">
+							<DataPath>Объект.ДанныеОВремени.Часов23</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>23</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>23</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>23</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов23КонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов23РасширеннаяПодсказка" id="104"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов24" id="105">
+							<DataPath>Объект.ДанныеОВремени.Часов24</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>24</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>24</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>24</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов24КонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов24РасширеннаяПодсказка" id="107"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов25" id="108">
+							<DataPath>Объект.ДанныеОВремени.Часов25</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>25</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>25</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>25</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов25КонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов25РасширеннаяПодсказка" id="110"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов26" id="111">
+							<DataPath>Объект.ДанныеОВремени.Часов26</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>26</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>26</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>26</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов26КонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов26РасширеннаяПодсказка" id="113"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов27" id="114">
+							<DataPath>Объект.ДанныеОВремени.Часов27</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>27</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>27</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>27</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов27КонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов27РасширеннаяПодсказка" id="116"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов28" id="117">
+							<DataPath>Объект.ДанныеОВремени.Часов28</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>28</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>28</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>28</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов28КонтекстноеМеню" id="118"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов28РасширеннаяПодсказка" id="119"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов29" id="120">
+							<DataPath>Объект.ДанныеОВремени.Часов29</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>29</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>29</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>29</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов29КонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов29РасширеннаяПодсказка" id="122"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов30" id="123">
+							<DataPath>Объект.ДанныеОВремени.Часов30</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>30</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>30</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>30</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов30КонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов30РасширеннаяПодсказка" id="125"/>
+						</InputField>
+						<InputField name="ДанныеОВремениЧасов31" id="126">
+							<DataPath>Объект.ДанныеОВремени.Часов31</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>31</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>31</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>31</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>7</Width>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДанныеОВремениЧасов31КонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="ДанныеОВремениЧасов31РасширеннаяПодсказка" id="128"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="Посещаемость" id="139">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Посещаемость</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПосещаемостьКонтекстноеМеню" id="140"/>
+					<AutoCommandBar name="ПосещаемостьКоманднаяПанель" id="141"/>
+					<ExtendedTooltip name="ПосещаемостьРасширеннаяПодсказка" id="142"/>
+					<SearchStringAddition name="ПосещаемостьСтрокаПоиска" id="143">
+						<AdditionSource>
+							<Item>Посещаемость</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПосещаемостьСтрокаПоискаКонтекстноеМеню" id="144"/>
+						<ExtendedTooltip name="ПосещаемостьСтрокаПоискаРасширеннаяПодсказка" id="145"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПосещаемостьСостояниеПросмотра" id="146">
+						<AdditionSource>
+							<Item>Посещаемость</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПосещаемостьСостояниеПросмотраКонтекстноеМеню" id="147"/>
+						<ExtendedTooltip name="ПосещаемостьСостояниеПросмотраРасширеннаяПодсказка" id="148"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПосещаемостьУправлениеПоиском" id="149">
+						<AdditionSource>
+							<Item>Посещаемость</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПосещаемостьУправлениеПоискомКонтекстноеМеню" id="150"/>
+						<ExtendedTooltip name="ПосещаемостьУправлениеПоискомРасширеннаяПодсказка" id="151"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ПосещаемостьДата" id="158">
+							<DataPath>Объект.Посещаемость.Дата</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПосещаемостьДатаКонтекстноеМеню" id="159"/>
+							<ExtendedTooltip name="ПосещаемостьДатаРасширеннаяПодсказка" id="160"/>
+						</InputField>
+						<InputField name="ПосещаемостьВремя" id="161">
+							<DataPath>Объект.Посещаемость.Время</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПосещаемостьВремяКонтекстноеМеню" id="162"/>
+							<ExtendedTooltip name="ПосещаемостьВремяРасширеннаяПодсказка" id="163"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКомментарийОтветственный" id="129">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий ответственный</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Comment responsible person</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Şərh məsul</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ChildItemsWidth>LeftWide</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомментарийОтветственныйРасширеннаяПодсказка" id="130"/>
+			<ChildItems>
+				<InputField name="Комментарий" id="131">
+					<DataPath>Объект.Комментарий</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="КомментарийExtendedTooltip" id="133"/>
+				</InputField>
+				<InputField name="Ответственный" id="134">
+					<DataPath>Объект.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="136"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.КРВС_ПосещаемостьСотрудников</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="МесяцРегистрацииСтрокой" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Month</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>ay</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ИДЗадания" id="3">
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьИзHikvision" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из Hikvision</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill in from Hikvision</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Hikvision-dan doldurmaq</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.КРВС_Hikvision</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаполнитьИзHikvision</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

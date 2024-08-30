@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.16">
+	<ConfigVersions>
+		<Metadata name="AccumulationRegister.КРВС_ПосещаемостьСотрудников" id="50295bc0-6485-4fa1-b793-dafb2d90c773" configVersion="d3c74ea58985ea32ab7bf5df130d6cc70464a058">
+			<Metadata name="AccumulationRegister.КРВС_ПосещаемостьСотрудников.Dimension.Дата" id="5263705c-d277-49f8-83a6-e656d54f9ce4"/>
+			<Metadata name="AccumulationRegister.КРВС_ПосещаемостьСотрудников.Dimension.Сотрудник" id="7c01614a-9249-47e6-976f-b45c19677578"/>
+			<Metadata name="AccumulationRegister.КРВС_ПосещаемостьСотрудников.Resource.Часы" id="83feaa3e-d000-4bcd-b35a-17a1dd5202fd"/>
+			<Metadata name="AccumulationRegister.КРВС_ПосещаемостьСотрудников.Dimension.ПериодРегистрации" id="98688831-6173-454c-90d1-96e15c7356e8"/>
+		</Metadata>
+		<Metadata name="Catalog.ВидыИспользованияРабочегоВремени" id="d0b3eaf8-c121-47c4-bc90-a9e77946ca4b" configVersion="61597435e284c12fefaded4b34f9c96fd2719bb3"/>
+		<Metadata name="Catalog.ВидыИспользованияРабочегоВремени.Predefined" id="d0b3eaf8-c121-47c4-bc90-a9e77946ca4b.1c" configVersion="946ce6dfd8396204d1b523c81ac7dc3237e53289"/>
+		<Metadata name="Catalog.Организации" id="11a5969c-fea9-4624-8b5b-c02733fb7522" configVersion="9739ce6248524e776403ecfcbb21f78d62614c24"/>
+		<Metadata name="Catalog.ПодразделенияОрганизаций" id="7b70e471-cdb0-44af-b361-0a2e8ccb4552" configVersion="81080378dacae33351ceeabb3938d8efa12731ac"/>
+		<Metadata name="Catalog.Пользователи" id="5f63fd78-2124-47e6-8076-899e86787a5b" configVersion="56a2fc21d19d0f9d1e35ddab8ae0ffe6fe6ff5c3"/>
+		<Metadata name="Catalog.Сотрудники" id="1751a4b2-5665-4b51-8b3f-fb5e47113dee" configVersion="d29d0bf47424d16f773eb77765cf75368cd697d5">
+			<Metadata name="Catalog.Сотрудники.TabularSection.УдалитьНаборыЗначенийДоступа" id="0f957fa2-8aae-4393-952c-d1d8fe1b07ff"/>
+			<Metadata name="Catalog.Сотрудники.Attribute.КРВС_ИдентификаторHikvision" id="1134bc60-e12f-47f2-8f15-61c7439db82c"/>
+			<Metadata name="Catalog.Сотрудники.Attribute.ВАрхиве" id="2e77ee5a-e336-4702-84c5-204e5f8e9e2e"/>
+			<Metadata name="Catalog.Сотрудники.Attribute.ГоловнаяОрганизация" id="fb1752a3-4e16-419f-ac2b-53d40568f7e0"/>
+			<Metadata name="Catalog.Сотрудники.Attribute.УточнениеНаименования" id="fda3cd4c-2fb0-42d8-936e-bef156690a75"/>
+		</Metadata>
+		<Metadata name="Catalog.Сотрудники.Form.ФормаЭлемента" id="6e0b5290-81d9-4ff0-b408-92bf65fd931a" configVersion="aff19f323c5235dc321809c7219886fffc4087c6"/>
+		<Metadata name="Catalog.Сотрудники.Form.ФормаЭлемента.Form" id="6e0b5290-81d9-4ff0-b408-92bf65fd931a.0" configVersion="7eeef1152e8ea2913830eacdf71aa05942daeeae"/>
+		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудников" id="902d495c-4ee6-421a-95f7-77eb02a756bc" configVersion="c8e635ff2ca71e1ab5d7b832d32b8e6ee235c129"/>
+		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудников.Module" id="902d495c-4ee6-421a-95f7-77eb02a756bc.0" configVersion="b05026dffa8239b09308d4ae8539175e033e0cfc"/>
+		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудниковВызовСервера" id="e4cd6084-bb25-401e-9382-cbbd1a92b621" configVersion="1adb3eb143e60ac107b28c8eb0f02b8eae63120c"/>
+		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудниковВызовСервера.Module" id="e4cd6084-bb25-401e-9382-cbbd1a92b621.0" configVersion="915ea866b6380f9c8a0fa18eb380f8eb945194b3"/>
+		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудниковКлиентСервер" id="f8e4c212-63ad-4f2a-a04c-b95d118a272c" configVersion="a2ce0a3e38beeb54166c49e0a5f164f74ed5dae1"/>
+		<Metadata name="CommonModule.КРВС_КонтрольРабочегоВремениСотрудниковКлиентСервер.Module" id="f8e4c212-63ad-4f2a-a04c-b95d118a272c.0" configVersion="0eb8cca575928f39fd0b02a1b22cc5673e294b55"/>
+		<Metadata name="CommonModule.КРВС_ОбменСHikvision" id="492ebae5-8a43-44a1-a6e1-f70988da3ad4" configVersion="5e3d31f9594daadff3ec36bc0740a08c8e73439c"/>
+		<Metadata name="CommonModule.КРВС_ОбменСHikvision.Module" id="492ebae5-8a43-44a1-a6e1-f70988da3ad4.0" configVersion="fce9e81df1edbabf5b7aae5059ed76ce911a7848"/>
+		<Metadata name="CommonModule.УчетРабочегоВремениРасширенныйКлиент" id="71e0eac6-c71c-415c-9e34-ce53626e037c" configVersion="7cc92e0102b7300510e4c3825354d4f82d867e09"/>
+		<Metadata name="CommonModule.УчетРабочегоВремениРасширенныйКлиент.Module" id="71e0eac6-c71c-415c-9e34-ce53626e037c.0" configVersion="90139b21cbe2fe9512525a6136cc8fbcb0560093"/>
+		<Metadata name="CommonModule.УчетРабочегоВремениРасширенныйФормы" id="cc98aabf-fdf4-418e-97c3-433921e17505" configVersion="a4282b0ac8d82ec50288d2291444c15f43bc4a50"/>
+		<Metadata name="CommonModule.УчетРабочегоВремениРасширенныйФормы.Module" id="cc98aabf-fdf4-418e-97c3-433921e17505.0" configVersion="81c20e9933b37e53af40ea8563e81fb3984d08f6"/>
+		<Metadata name="CommonPicture.КРВС_Hikvision" id="2da9a1c1-eef8-4631-ad18-eb79843e3c40" configVersion="40eccd9215a8f9a23f002dde097b38518cffa679"/>
+		<Metadata name="CommonPicture.КРВС_Hikvision.Picture" id="2da9a1c1-eef8-4631-ad18-eb79843e3c40.0" configVersion="5755f1cd5f3ebd5dd0a106fbbc843169c3567a1e"/>
+		<Metadata name="CommonPicture.КРВС_Календарь" id="3e10a70f-4272-46b6-8398-668a96f74089" configVersion="d389aa691d834ff010d66ba5aac995c28903655f"/>
+		<Metadata name="CommonPicture.КРВС_Календарь.Picture" id="3e10a70f-4272-46b6-8398-668a96f74089.0" configVersion="c747b0b5f5b1b8d91961121a91250b5e142cb6df"/>
+		<Metadata name="CommonPicture.КРВС_НеобоснованныеЧасы" id="26b20a2f-d2f7-49f7-ac86-e86ceb70dbae" configVersion="e799d8adb6ec32b160a3f30a1c9a555d7fd4617e"/>
+		<Metadata name="CommonPicture.КРВС_НеобоснованныеЧасы.Picture" id="26b20a2f-d2f7-49f7-ac86-e86ceb70dbae.0" configVersion="45b5eb07ab14aa0bb7f16811f35522a04f42c16e"/>
+		<Metadata name="CommonPicture.КРВС_НормаЧасов" id="285d225f-4236-455c-a569-9b395bf53d75" configVersion="c0d2e4941de31057280fc749ab4c07e215f4be3c"/>
+		<Metadata name="CommonPicture.КРВС_НормаЧасов.Picture" id="285d225f-4236-455c-a569-9b395bf53d75.0" configVersion="6af60676bbb31c18c4b5fa2fee4a798d216993dc"/>
+		<Metadata name="CommonPicture.КРВС_ОбоснованныеЧасы" id="aefed5f1-5507-45ca-b7d9-676b05f2f849" configVersion="d19e33285ce653a7ce8dda86d5ad318fcf5adf3d"/>
+		<Metadata name="CommonPicture.КРВС_ОбоснованныеЧасы.Picture" id="aefed5f1-5507-45ca-b7d9-676b05f2f849.0" configVersion="ceb2050d0562d2a88eadef8b995ba6db87827de0"/>
+		<Metadata name="CommonPicture.КРВС_Посещаемость" id="66137403-e969-4708-846a-eb467cae809b" configVersion="277cf6b92556abcced31cc6ad78d58ae218a5f2b"/>
+		<Metadata name="CommonPicture.КРВС_Посещаемость.Picture" id="66137403-e969-4708-846a-eb467cae809b.0" configVersion="fcdef81ffa3921abffb47de7df3fa4c8280770c0"/>
+		<Metadata name="CommonPicture.Напоминание" id="8677ac26-06ea-459b-8004-fd12da52e501" configVersion="43713c5fc874bec7ff9c974b5611230ff55fc615"/>
+		<Metadata name="Configuration.КонтрольРабочегоВремениСотрудников" id="63c3fabb-3eeb-4cac-a426-82b0217a8ae3" configVersion="bf3db047526427c96be27fa40a058edcfed4ed0f"/>
+		<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени" id="3fb002fc-15ab-468b-84f6-1f66ad454759" configVersion="c92aa1809f49423dd7b4de6b876a5518b12386a2">
+			<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.Attribute.Ответственный" id="0d447e12-537c-448e-a868-ff3bd88a9ec7"/>
+			<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.TabularSection.Сотрудники" id="37fba963-1460-4fe3-a0c4-ee3898c500a9"/>
+			<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.TabularSection.Сотрудники.Attribute.Сотрудник" id="62d67d13-bae3-483d-98d9-c6013e465a25"/>
+			<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.Attribute.Комментарий" id="697b8346-8721-4163-bca3-04b4e5a2d2db"/>
+			<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.Attribute.КраткийСоставДокумента" id="9f0d44e3-87e3-4d44-82b2-f46a5525cff2"/>
+			<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.TabularSection.Сотрудники.Attribute.ДатаОкончания" id="aec8a0aa-bcab-4a41-8e2c-c515c960a6e6"/>
+			<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.Attribute.Организация" id="bc8c4aa0-8072-4d64-9199-78bb2a61b129"/>
+			<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.TabularSection.Сотрудники.Attribute.ДатаНачала" id="f48a33de-ae35-4d20-bbfa-6ae260040a3d"/>
+		</Metadata>
+		<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.Form.ФормаДокумента" id="7620c52e-70be-49c1-aba4-582302d4ce57" configVersion="d824a7c862d28fbd388098f268bcf87801dd65a7"/>
+		<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.Form.ФормаДокумента.Form" id="7620c52e-70be-49c1-aba4-582302d4ce57.0" configVersion="d808b4fca99b6933da334b8f462d6673b46f18b5"/>
+		<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.Form.ФормаСписка" id="1f90f00e-ca10-4b0d-b444-591bcd481ca9" configVersion="4ed2b02a38c983e523e90d0cac5e2263b357cecb"/>
+		<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.Form.ФормаСписка.Form" id="1f90f00e-ca10-4b0d-b444-591bcd481ca9.0" configVersion="695012529148cf85c8f389768774d764e4ebb110"/>
+		<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.ManagerModule" id="3fb002fc-15ab-468b-84f6-1f66ad454759.2" configVersion="fea327c51f2351e2420067798b6eae046daffb5a"/>
+		<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.ObjectModule" id="3fb002fc-15ab-468b-84f6-1f66ad454759.0" configVersion="da5c89cbb1a6af89dd85d73936ac6e8ddaac7269"/>
+		<Metadata name="Document.КРВС_ПосещаемостьСотрудников" id="d5c27ef9-0f62-4bf0-a0ea-fd4528328fab" configVersion="444d0e9947f95bcbabd14b5cadd9855c3d012021">
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов14" id="0316db5d-baa3-49c3-b5d2-30b0aa9cf899"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов21" id="03e0bc2b-0c05-440d-82bf-4293df571c82"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов13" id="094838f3-5d15-4f0b-868b-deb3e3c58139"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.Посещаемость" id="17a75a01-bb92-445f-b71a-db7139023182"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.Посещаемость.Attribute.День" id="1d083e02-5219-4097-9842-c24f747f7173"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.Attribute.Комментарий" id="1e464834-9626-4059-9512-4928c93e6797"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов5" id="2c4d33e7-74cc-45f9-94be-83cf05e90286"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.Attribute.Ответственный" id="2d2124dd-a622-41e8-b5af-b2c749efe8a4"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов28" id="304b1391-4727-41f6-9c58-b014fdeb0253"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.Attribute.ПериодРегистрации" id="3dcff0c4-06ae-4eea-a517-6b0e3cdb0696"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов20" id="41918c6f-6faf-4ed1-b07e-9245e5937633"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов10" id="468410ab-c25a-4e0a-ad27-8f5c4f090641"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Сотрудник" id="473481e3-b071-443f-bb12-ec2b751dc37f"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.Посещаемость.Attribute.Сотрудник" id="5398eab4-f993-442d-a243-ac0006128b6a"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов7" id="5c57330c-d644-4f08-be47-d7bf1c8c9eae"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов31" id="5e5dd217-1994-4ba8-a79f-2c91d3251d6c"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов19" id="5fd083a7-24eb-4e22-bd10-065a2bd3679c"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов18" id="65c685e9-419b-40b5-a385-ffb884d2d1d4"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов29" id="69f7728b-b4eb-4251-8e79-4e94e8f8857f"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов30" id="6f40323c-04b6-4d38-8d8e-3e5f3c227a44"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.Attribute.Организация" id="7aa707d5-8667-4543-a694-31e21f428ace"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.Attribute.КраткийСоставДокумента" id="7ed9bebb-d903-48d4-979a-cec47e33492f"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов12" id="80e9127b-1881-41cd-866b-e28be68127d0"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени" id="8cb5f13d-386c-4545-9003-024158edf74f"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов1" id="9188264d-80b1-40b9-93bd-90f7218fc820"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов26" id="950da935-72cc-4a07-9539-18f6468f5823"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов27" id="9566a99a-f135-48f8-9bc9-2260b52e8d98"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов17" id="98ac2b8c-315e-4528-98a5-629d142a8ab2"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов9" id="98cd75d2-6251-4f31-8fef-b7c3edd60e6c"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов23" id="9cbc2d2d-307c-4053-96da-76666e75722d"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов4" id="a218d4fa-b068-41c5-a449-dda562c26dfb"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов2" id="a3fe7f87-d245-46c4-b884-5a8041bd66e0"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов16" id="a8bee3d3-8679-45c5-aa38-b8a9550d1169"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов6" id="ac707b7f-a002-468e-ae33-fd7ece10fdf7"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов15" id="b850ac92-a724-45d1-b6d7-f41eb0b38977"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов8" id="b9d51d12-7ffa-4807-ba28-2e70bebea6b0"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.Посещаемость.Attribute.Время" id="da7c9a7e-39a7-4f8e-a4ba-6a6373fc73a2"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов3" id="e0073593-45a6-4f6c-82a9-764664c68cce"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов22" id="e0398808-993a-4388-b39f-8e7d338ff4dc"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов24" id="e732d677-340a-4010-beac-c54b72fa55eb"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов11" id="e95a3f35-784b-4c48-ac13-03603278d885"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.ДанныеОВремени.Attribute.Часов25" id="ed0f7159-f472-4386-8760-992b3e7acb3e"/>
+			<Metadata name="Document.КРВС_ПосещаемостьСотрудников.TabularSection.Посещаемость.Attribute.Дата" id="fab18b38-61d7-45eb-bc35-b144891f1e52"/>
+		</Metadata>
+		<Metadata name="Document.КРВС_ПосещаемостьСотрудников.Form.ФормаДокумента" id="80391484-24b2-4f36-b77a-1be6d645d7c7" configVersion="0b5a924acfd760d257bafdba320909b4b16e25a0"/>
+		<Metadata name="Document.КРВС_ПосещаемостьСотрудников.Form.ФормаДокумента.Form" id="80391484-24b2-4f36-b77a-1be6d645d7c7.0" configVersion="d19f539ca4d697b8d0011dfd014f2a1b1f06e5a7"/>
+		<Metadata name="Document.КРВС_ПосещаемостьСотрудников.Form.ФормаСписка" id="53c97273-4eda-4e72-a4be-a181af7c5972" configVersion="253957d8eefee42a1ce21367247b8ff49105027d"/>
+		<Metadata name="Document.КРВС_ПосещаемостьСотрудников.Form.ФормаСписка.Form" id="53c97273-4eda-4e72-a4be-a181af7c5972.0" configVersion="9e2bc2d395a873f955184bf49ad326f9d19842c5"/>
+		<Metadata name="Document.КРВС_ПосещаемостьСотрудников.ManagerModule" id="d5c27ef9-0f62-4bf0-a0ea-fd4528328fab.2" configVersion="9c7f878bc63def0bd941f4554264e45fa91279c0"/>
+		<Metadata name="Document.КРВС_ПосещаемостьСотрудников.ObjectModule" id="d5c27ef9-0f62-4bf0-a0ea-fd4528328fab.0" configVersion="f6d85cdfb5f1d65ce2c4b00379675b56fa17adf5"/>
+		<Metadata name="Document.ТабельУчетаРабочегоВремени" id="f5ff9dc2-4406-4f15-a250-fff9da8ea960" configVersion="5409959bca6a0201312cd225bf478ae08e9e087b">
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.Attribute.ДатаОкончанияПериода" id="0ab5633b-65d2-4511-9e7c-339fa91d32a8"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.Attribute.Подразделение" id="145a5ce4-c33b-455a-a668-0520064d5101"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.Attribute.Организация" id="173d9e10-68b8-4fda-9fd1-563993af8ad3"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.КРВС_КонтрольПосещаемости.Attribute.НормаЧасов" id="250aa6c7-6ea8-414c-a808-6c8f3d86c81d"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.Attribute.Комментарий" id="35d27470-06d4-43cc-840b-ba878032d2f7"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.КРВС_КонтрольПосещаемости.Attribute.НеобоснованныеЧасы" id="372b3b6b-7f7e-43cf-ab76-02062791781a"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.КРВС_ОбоснованныеЧасы" id="3b2ac312-8472-4a37-9558-ced5cbc2d7ce"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.Attribute.Ответственный" id="3fc52777-821f-4c84-945e-626b5a935622"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.Сотрудник" id="41e0ab25-730b-44b6-aea7-ea36efd57fe9"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.КРВС_НормаЧасов" id="44c1705a-d7d1-4400-a1cf-d43a861c1016"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.КРВС_КонтрольПосещаемости.Attribute.Сотрудник" id="4e41359a-fe4d-4dc0-9bb1-f458802d5616"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.КРВС_КонтрольПосещаемости" id="5517c0fb-b9e4-479c-81d0-8dff61507b2b"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.Attribute.ПериодРегистрации" id="6cc0df7f-fdbd-404a-ab8b-1635203a0526"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.Attribute.ДатаНачалаПериода" id="8b9312c1-b78c-4dc0-b5eb-23dd5857981d"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени.Attribute.КРВС_НеобоснованныеЧасы" id="a598e098-3f1c-4799-bea1-ee9c482c34e1"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.Attribute.ПериодВводаДанныхОВремени" id="b1d2d37d-f709-49c2-9de3-c4db7e3f9bc4"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.ДанныеОВремени" id="b4dcb25c-5ec6-4235-b249-75c58d24a736"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.КРВС_КонтрольПосещаемости.Attribute.ОбоснованныеЧасы" id="bdf53a03-77ec-47e5-99bb-945e95d071df"/>
+			<Metadata name="Document.ТабельУчетаРабочегоВремени.TabularSection.КРВС_КонтрольПосещаемости.Attribute.НомерДня" id="e5187667-8d45-403c-b1b7-5f2929b25cd3"/>
+		</Metadata>
+		<Metadata name="Document.ТабельУчетаРабочегоВремени.Form.ФормаДокумента" id="d47d3d58-b5ec-441a-bb60-0a5d36e3fef2" configVersion="b158f6dae5c67055aea95e32c3665f4cb5e4f4a6"/>
+		<Metadata name="Document.ТабельУчетаРабочегоВремени.Form.ФормаДокумента.Form" id="d47d3d58-b5ec-441a-bb60-0a5d36e3fef2.0" configVersion="2299346402504f590f0c73f7139625c7d4a2405d"/>
+		<Metadata name="Document.ТабельУчетаРабочегоВремени.ObjectModule" id="f5ff9dc2-4406-4f15-a250-fff9da8ea960.0" configVersion="ed9358097c4475e1b0077314db257f70896e33f8"/>
+		<Metadata name="Enum.КРВС_ВариантыОкругленияЧасовПосещения" id="e53615ff-b09f-4a25-b0a4-d51d63f253a0" configVersion="455a3790ce4dfb0a584dcafd5ae5add0e7201fa0">
+			<Metadata name="Enum.КРВС_ВариантыОкругленияЧасовПосещения.EnumValue.ВПользуСотрудника" id="3a73b7fa-7811-49b4-a316-4abcdd96c775"/>
+			<Metadata name="Enum.КРВС_ВариантыОкругленияЧасовПосещения.EnumValue.ВПользуПредприятия" id="6d9aaa94-964c-484f-9869-e438b13be991"/>
+			<Metadata name="Enum.КРВС_ВариантыОкругленияЧасовПосещения.EnumValue.ПоАрифметическимПравилам" id="fdb31a8b-0f6c-4cb9-bcf6-8ffe5e31f844"/>
+		</Metadata>
+		<Metadata name="Enum.ПериодыВводаДанныхОВремени" id="611e5339-18e8-44b7-8c3f-afc32f966a98" configVersion="394b48f118b9ddd923e78503104cdb8194c87b54"/>
+		<Metadata name="Enum.СостоянияСотрудника" id="dc606c1e-4f83-4626-9dbd-bc7fec614f82" configVersion="5111bf1debee2cc3e53078abfd5531e6d2a0ede6">
+			<Metadata name="Enum.СостоянияСотрудника.EnumValue.Работа" id="bcf405ce-2d8c-4d3b-95a6-51d6dd7df24c"/>
+		</Metadata>
+		<Metadata name="EventSubscription.ЗаполнитьРеквизитыОбъекта" id="138fc37a-5dbd-4bc0-8f35-7b241aafbbaf" configVersion="7db833540204399db0dd8a3ae20b411731893fae"/>
+		<Metadata name="ExternalDataSource.КРВС_Hikvision" id="bfa4261c-0b5e-4b4f-bc66-83b3c7d3a1de" configVersion="25e10ca64448d799b24e827f1778e326adcf0e14"/>
+		<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable" id="77837ce0-7540-4754-9acc-624313582def" configVersion="d85ee677e9949c4bb4feaf954386895894b7dfa4">
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.DeviceSerialNo" id="055c8f20-6fbc-40de-a817-c633af847881"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.MaskWearingStatus" id="0d96137a-2ccb-412e-8cc2-c81fb36eca95"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.AccessDateandTime" id="16aa53b7-4e04-4363-aaf3-996ce0dce3f4"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.CardNumber" id="1a971f72-1021-4a4e-b702-0ecfa473d552"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.PersonName" id="1adfe936-cf26-4995-8b0b-b14ace16ed96"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.Direction" id="445bc580-8e00-4f7f-b8a9-78007305630b"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.AuthenticationType" id="4c596327-0d34-49fc-8eb7-324de73cf49b"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.ReaderName" id="6da85ee1-3872-42f9-978f-796c60e3b691"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.FirstName" id="87d99cf1-dc94-4514-808f-b1a4cf6699b8"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.AttendanceStatus" id="95752477-047f-431b-98ee-ffe805741473"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.DeviceName" id="a47ad2d3-4da4-438b-a2e1-eb5da3e2bc66"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.EmployeeID" id="ac65a880-daf2-4466-ae85-52cb52051abe"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.ResourceName" id="be5bbc23-f58b-43ab-8e16-331cbffd2b34"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.AccessDate" id="c6786f85-4b05-401b-94ff-33b6cf8fedd1"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.PersonGroup" id="c7db2455-00cf-4eee-9a4f-da7c0d2dc709"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.AuthenticationResult" id="ca006cd0-551d-4627-9a10-99f86ad7a276"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.AccessTime" id="f59e0bde-12af-48d8-90f4-6f03b122b7e1"/>
+			<Metadata name="ExternalDataSource.КРВС_Hikvision.Table.dbo_AttendanceTable.Field.LastName" id="fd74a30c-2496-4df2-919f-2f63ea377c54"/>
+		</Metadata>
+		<Metadata name="InformationRegister.КРВС_ВремяПриходаУходаСотрудников" id="ec6782d0-a443-43e7-8539-d955136db973" configVersion="0a0eb7beef9c3504bce7a8427bb12e04e46e803d">
+			<Metadata name="InformationRegister.КРВС_ВремяПриходаУходаСотрудников.Dimension.Сотрудник" id="5b12b134-f830-47db-8289-833b84e49b11"/>
+			<Metadata name="InformationRegister.КРВС_ВремяПриходаУходаСотрудников.Dimension.Дата" id="8e660dee-bd38-425d-9bea-6cd7928d3ea7"/>
+			<Metadata name="InformationRegister.КРВС_ВремяПриходаУходаСотрудников.Resource.ВремяУхода" id="cbba2765-a346-42e1-ab55-7648734e5c9d"/>
+			<Metadata name="InformationRegister.КРВС_ВремяПриходаУходаСотрудников.Resource.ВремяПрихода" id="e6088fe7-8b83-4eaf-8fa6-f401776be134"/>
+		</Metadata>
+		<Metadata name="InformationRegister.КРВС_ОсвобожденияОтКонтроляРабочегоВремени" id="c698b8d3-849b-428c-a0d4-d1d6321459b9" configVersion="5f26a7348aebe78389be0841febe6e04fab053fc">
+			<Metadata name="InformationRegister.КРВС_ОсвобожденияОтКонтроляРабочегоВремени.Dimension.Организация" id="55b61914-34e2-46c6-a49e-71a7bbc7ca81"/>
+			<Metadata name="InformationRegister.КРВС_ОсвобожденияОтКонтроляРабочегоВремени.Resource.ДатаНачала" id="87088731-700e-4298-bce6-8a2e21bb22b3"/>
+			<Metadata name="InformationRegister.КРВС_ОсвобожденияОтКонтроляРабочегоВремени.Resource.ДатаОкончания" id="c13ccad2-3353-4c67-aaf3-910ef5593d47"/>
+			<Metadata name="InformationRegister.КРВС_ОсвобожденияОтКонтроляРабочегоВремени.Dimension.Сотрудник" id="f12e6ac7-425a-4428-a672-ec343b94c41b"/>
+		</Metadata>
+		<Metadata name="InformationRegister.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников" id="631fdd66-b118-49f6-8bd6-276fdfcb90db" configVersion="7743851b32ca8beecffd33bbd265ea262e8a8ba1">
+			<Metadata name="InformationRegister.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.Command.ПараметрыКонтроляРабочегоВремениСотрудников" id="64d64577-196b-4e9d-bb18-557d5cec5244"/>
+			<Metadata name="InformationRegister.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.Dimension.Организация" id="959a80cc-0e61-4cfe-b65c-fb4a90d93fea"/>
+			<Metadata name="InformationRegister.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.Resource.ТочностьЧасовПосещения" id="a4546371-1379-4faa-bbf9-d4e2e6ab5e80"/>
+			<Metadata name="InformationRegister.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.Resource.ВариантОкругления" id="e4bbc2ea-2385-4b26-b17a-26ea20e86c16"/>
+			<Metadata name="InformationRegister.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.Resource.ДопустимыеЧасыБезОбоснований" id="fdd47c8f-8ffe-4dfd-90e4-d3816f910893"/>
+		</Metadata>
+		<Metadata name="InformationRegister.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.Command.ПараметрыКонтроляРабочегоВремениСотрудников.CommandModule" id="64d64577-196b-4e9d-bb18-557d5cec5244.2" configVersion="9dfd89afdee85615aabd9c90cd464052de68cd16"/>
+		<Metadata name="InformationRegister.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.Form.ФормаЗаписи" id="76c3e75f-70d2-450e-8c31-bffe586cdae0" configVersion="368d77c521569850e82129d00ded47f6f2744233"/>
+		<Metadata name="InformationRegister.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.Form.ФормаЗаписи.Form" id="76c3e75f-70d2-450e-8c31-bffe586cdae0.0" configVersion="059eb34bc79aff1d9903f6a050d934703c4b87c3"/>
+		<Metadata name="Language.Азербайджанский" id="1d4e64fc-87be-4652-bc78-4a55be6c3593" configVersion="0daf33b67d0f717e0e978c37b954cfc64dfac3e5"/>
+		<Metadata name="Language.Английский" id="21cb6192-8559-46b7-9f7b-acd4a91ea676" configVersion="4d2ba2348ab5eee52eae585c534ff0adca897e32"/>
+		<Metadata name="Language.Русский" id="f99f1e08-29a3-4a6c-8a11-d4640a9565ae" configVersion="c4e528642693ed540eb3d48c61c81c19bffdd174"/>
+		<Metadata name="Report.КРВС_КонтрольРабочегоВремениСотрудников" id="a207145c-8154-4b10-947a-021f429f09a3" configVersion="de13f26f4900173fb7720bd88db12886befb4db2"/>
+		<Metadata name="Report.КРВС_КонтрольРабочегоВремениСотрудников.ObjectModule" id="a207145c-8154-4b10-947a-021f429f09a3.0" configVersion="7110ddf3e1f89da8492e053116a86011d4555a7b"/>
+		<Metadata name="Report.КРВС_КонтрольРабочегоВремениСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных" id="b0937408-7365-43bf-a162-1d67e9515c62" configVersion="65d4fab7fd446200f3fa01c0223e97f389dd0c81"/>
+		<Metadata name="Report.КРВС_КонтрольРабочегоВремениСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="b0937408-7365-43bf-a162-1d67e9515c62.0" configVersion="573717dbf0955ee735c28ec1ee8edf57ea4badab"/>
+		<Metadata name="Role.КРВС_ОсновнаяРоль" id="de7cafaf-3a80-4bb7-b19f-8424bdd95b1c" configVersion="e8e96f84b2cbd1ddf6e334ae34ab0ee0c8b7aadc"/>
+		<Metadata name="StyleItem.ВажнаяНадписьШрифт" id="d1fb9039-542e-4694-8f36-2c5ccb93c19d" configVersion="65f1ec77d55fa3177d148c7f84bcb00cbaf3679d"/>
+		<Metadata name="StyleItem.ПоясняющийТекст" id="edab760f-ff70-49e4-8475-ab25bc9815fe" configVersion="0ac16c2bdb6fffc5a65fac98c43a57cdd2c90c4a"/>
+		<Metadata name="Subsystem.Зарплата" id="59716c80-46ab-492c-a6f1-0bf697da7021" configVersion="6223fbf9744b91d033f8f4e3f4b1cc73d16b9d95"/>
+		<Metadata name="Subsystem.Зарплата.Subsystem.УчетРабочегоВремени" id="0174f0f3-6c65-43a2-b258-baeb150d5be9" configVersion="35bf7e0f6b48128b4197771f90e2ab95cc005adb"/>
+		<Metadata name="Subsystem.Зарплата.Subsystem.УчетРабочегоВремени.CommandInterface" id="0174f0f3-6c65-43a2-b258-baeb150d5be9.1" configVersion="60f2ad8881b67cc2bcc6aa3e61e57e2ec0734c83"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

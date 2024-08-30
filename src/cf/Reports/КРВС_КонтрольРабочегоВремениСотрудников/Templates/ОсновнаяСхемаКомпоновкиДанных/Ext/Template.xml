@@ -1,0 +1,976 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Данные</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Day</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Tarix</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Employee</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Əməkdaş</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Сотрудники</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбоснованныеЧасы</dataPath>
+			<field>ОбоснованныеЧасы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обоснованные часы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Justified hours</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Əsaslı saatları</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодРегистрации</dataPath>
+			<field>ПериодРегистрации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧасыОтсутствия</dataPath>
+			<field>ЧасыОтсутствия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Часы отсутствия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Absence hours</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Yoxluq saatları</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидУчетаВремени</dataPath>
+			<field>ВидУчетаВремени</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид учета времени</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Time tracking kind</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Vaxt uçotunun növü</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Department</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Şöbə</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Должность</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Position</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Vəzifə</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Посещаемость.Сотрудник КАК Сотрудник,
+	Посещаемость.Дата КАК Дата,
+	ВЫБОР
+		КОГДА ПараметрыКонтроляРабочегоВремени.ВариантОкругления = ЗНАЧЕНИЕ(Перечисление.КРВС_ВариантыОкругленияЧасовПосещения.ПоАрифметическимПравилам)
+			ТОГДА ОКР(Посещаемость.ЧасыОборот, ПараметрыКонтроляРабочегоВремени.ТочностьЧасовПосещения)
+		КОГДА ПараметрыКонтроляРабочегоВремени.ВариантОкругления = ЗНАЧЕНИЕ(Перечисление.КРВС_ВариантыОкругленияЧасовПосещения.ВПользуСотрудника)
+			ТОГДА ОКР(Посещаемость.ЧасыОборот + 5 / (10 * (ПараметрыКонтроляРабочегоВремени.ТочностьЧасовПосещения + 1)), ПараметрыКонтроляРабочегоВремени.ТочностьЧасовПосещения)
+		КОГДА ПараметрыКонтроляРабочегоВремени.ВариантОкругления = ЗНАЧЕНИЕ(Перечисление.КРВС_ВариантыОкругленияЧасовПосещения.ВПользуПредприятия)
+			ТОГДА ОКР(Посещаемость.ЧасыОборот - 5 / (10 * (ПараметрыКонтроляРабочегоВремени.ТочностьЧасовПосещения + 1)), ПараметрыКонтроляРабочегоВремени.ТочностьЧасовПосещения)
+	КОНЕЦ КАК Часы
+ПОМЕСТИТЬ ВТПосещаемость
+ИЗ
+	РегистрНакопления.КРВС_ПосещаемостьСотрудников.Обороты({(ДАТАВРЕМЯ(1, 1, 1)) КАК ПустаяДатаНачала}, {(ДАТАВРЕМЯ(3999, 1, 1)) КАК ПустаяДатаОкончания}, , Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода) КАК Посещаемость
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.СрезПоследних({(&amp;НачалоПериода)}, ) КАК ПараметрыКонтроляРабочегоВремени
+		ПО Посещаемость.Сотрудник.ГоловнаяОрганизация = ПараметрыКонтроляРабочегоВремени.Организация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТДанныеУчетаВремениИСостоянийСотрудников.Дата КАК Дата,
+	ВТДанныеУчетаВремениИСостоянийСотрудников.Сотрудник КАК Сотрудник,
+	ВТДанныеУчетаВремениИСостоянийСотрудников.Организация КАК Организация,
+	ВЫБОР
+		КОГДА ВТДанныеУчетаВремениИСостоянийСотрудников.ВидУчетаВремени = ЗНАЧЕНИЕ(Справочник.ВидыИспользованияРабочегоВремени.Явка)
+				И ОсвобожденияОтКонтроля.Сотрудник ЕСТЬ NULL
+			ТОГДА ВЫБОР
+					КОГДА ЕСТЬNULL(ВТПосещаемость.Часы, 0) &lt; ВТДанныеУчетаВремениИСостоянийСотрудников.Часы
+						ТОГДА ЕСТЬNULL(ВТПосещаемость.Часы, 0)
+					ИНАЧЕ ВТДанныеУчетаВремениИСостоянийСотрудников.Часы
+				КОНЕЦ
+		ИНАЧЕ ВТДанныеУчетаВремениИСостоянийСотрудников.Часы
+	КОНЕЦ КАК ОбоснованныеЧасы,
+	ВЫБОР
+		КОГДА ВТДанныеУчетаВремениИСостоянийСотрудников.ВидУчетаВремени &lt;&gt; ЗНАЧЕНИЕ(Справочник.ВидыИспользованияРабочегоВремени.Явка)
+			ТОГДА ВТДанныеУчетаВремениИСостоянийСотрудников.Часы
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЧасыОтсутствия,
+	ВТДанныеУчетаВремениИСостоянийСотрудников.ВидУчетаВремени КАК ВидУчетаВремени,
+	ВТДанныеУчетаВремениИСостоянийСотрудников.Подразделение КАК Подразделение,
+	ВТДанныеУчетаВремениИСостоянийСотрудников.Должность КАК Должность
+ИЗ
+	ВТДанныеУчетаВремениИСостоянийСотрудников КАК ВТДанныеУчетаВремениИСостоянийСотрудников
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПосещаемость КАК ВТПосещаемость
+		ПО ВТДанныеУчетаВремениИСостоянийСотрудников.Дата = ВТПосещаемость.Дата
+			И ВТДанныеУчетаВремениИСостоянийСотрудников.Сотрудник = ВТПосещаемость.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КРВС_ОсвобожденияОтКонтроляРабочегоВремени.СрезПоследних({(ДАТАВРЕМЯ(3999, 1, 1)) КАК ПустаяДатаОкончания}, ) КАК ОсвобожденияОтКонтроля
+		ПО ВТДанныеУчетаВремениИСостоянийСотрудников.Организация = ОсвобожденияОтКонтроля.Организация
+			И ВТДанныеУчетаВремениИСостоянийСотрудников.Сотрудник = ОсвобожденияОтКонтроля.Сотрудник
+			И (ВТДанныеУчетаВремениИСостоянийСотрудников.Дата МЕЖДУ ОсвобожденияОтКонтроля.ДатаНачала И ОсвобожденияОтКонтроля.ДатаОкончания)
+ГДЕ
+	ВТДанныеУчетаВремениИСостоянийСотрудников.ВидУчетаВремени &lt;&gt; ЗНАЧЕНИЕ(Справочник.ВидыИспользованияРабочегоВремени.РабочееВремя)</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Посещения</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодРегистрации</dataPath>
+			<field>ПериодРегистрации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧасыПосещения</dataPath>
+			<field>ЧасыПосещения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Часы посещения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Attendance hours</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Davamiyyət saatları</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Посещаемость.Сотрудник КАК Сотрудник,
+	Посещаемость.Дата КАК Дата,
+	ВЫБОР
+		КОГДА ПараметрыКонтроляРабочегоВремени.ВариантОкругления = ЗНАЧЕНИЕ(Перечисление.КРВС_ВариантыОкругленияЧасовПосещения.ПоАрифметическимПравилам)
+			ТОГДА ОКР(Посещаемость.ЧасыОборот, ПараметрыКонтроляРабочегоВремени.ТочностьЧасовПосещения)
+		КОГДА ПараметрыКонтроляРабочегоВремени.ВариантОкругления = ЗНАЧЕНИЕ(Перечисление.КРВС_ВариантыОкругленияЧасовПосещения.ВПользуСотрудника)
+			ТОГДА ОКР(Посещаемость.ЧасыОборот + 5 / (10 * (ПараметрыКонтроляРабочегоВремени.ТочностьЧасовПосещения + 1)), ПараметрыКонтроляРабочегоВремени.ТочностьЧасовПосещения)
+		КОГДА ПараметрыКонтроляРабочегоВремени.ВариантОкругления = ЗНАЧЕНИЕ(Перечисление.КРВС_ВариантыОкругленияЧасовПосещения.ВПользуПредприятия)
+			ТОГДА ОКР(Посещаемость.ЧасыОборот - 5 / (10 * (ПараметрыКонтроляРабочегоВремени.ТочностьЧасовПосещения + 1)), ПараметрыКонтроляРабочегоВремени.ТочностьЧасовПосещения)
+	КОНЕЦ КАК ЧасыПосещения
+ИЗ
+	РегистрНакопления.КРВС_ПосещаемостьСотрудников.Обороты({(ДАТАВРЕМЯ(1, 1, 1)) КАК ПустаяДатаНачала}, {(ДАТАВРЕМЯ(3999, 1, 1)) КАК ПустаяДатаОкончания}, , Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода) КАК Посещаемость
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.СрезПоследних({(&amp;НачалоПериода)}, ) КАК ПараметрыКонтроляРабочегоВремени
+		ПО Посещаемость.Сотрудник.ГоловнаяОрганизация = ПараметрыКонтроляРабочегоВремени.Организация</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ПараметрыКонтроля</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДопустимыеЧасыБезОбоснований</dataPath>
+			<field>ДопустимыеЧасыБезОбоснований</field>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ПараметрыКонтроля.Организация КАК Организация,
+	ПараметрыКонтроля.ДопустимыеЧасыБезОбоснований * (1 + РАЗНОСТЬДАТ(&amp;НачалоПериода, &amp;КонецПериода, ДЕНЬ)) / ДЕНЬ(КОНЕЦПЕРИОДА(&amp;НачалоПериода, МЕСЯЦ)) КАК ДопустимыеЧасыБезОбоснований
+ИЗ
+	РегистрСведений.КРВС_ПараметрыКонтроляРабочегоВремениСотрудников.СрезПоследних({(&amp;НачалоПериода)}, ) КАК ПараметрыКонтроля</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Норма</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НормаЧасов</dataPath>
+			<field>НормаЧасов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Норма часов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Normal hours</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Norma saatları</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Date</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Tarix</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Employee</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>az</v8:lang>
+					<v8:content>Əməkdaş</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ 
+	ВТНормаВремени.Дата КАК Дата,
+	ВТНормаВремени.Сотрудник КАК Сотрудник,
+	ВТНормаВремени.ЧасыНорма КАК НормаЧасов
+ИЗ
+	ВТНормаВремени КАК ВТНормаВремени
+</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ВремяПрихода</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяПрихода</dataPath>
+			<field>ВремяПрихода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяУхода</dataPath>
+			<field>ВремяУхода</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВремяПриходаУхода.Сотрудник КАК Сотрудник,
+	ВремяПриходаУхода.Дата КАК Дата,
+	ВремяПриходаУхода.ВремяПрихода КАК ВремяПрихода,
+	ВремяПриходаУхода.ВремяУхода КАК ВремяУхода
+ИЗ
+	РегистрСведений.КРВС_ВремяПриходаУходаСотрудников КАК ВремяПриходаУхода</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>Данные</sourceDataSet>
+		<destinationDataSet>Посещения</destinationDataSet>
+		<sourceExpression>Дата</sourceExpression>
+		<destinationExpression>Дата</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Данные</sourceDataSet>
+		<destinationDataSet>Посещения</destinationDataSet>
+		<sourceExpression>Сотрудник</sourceExpression>
+		<destinationExpression>Сотрудник</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Данные</sourceDataSet>
+		<destinationDataSet>ПараметрыКонтроля</destinationDataSet>
+		<sourceExpression>Организация</sourceExpression>
+		<destinationExpression>Организация</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Данные</sourceDataSet>
+		<destinationDataSet>Норма</destinationDataSet>
+		<sourceExpression>Дата</sourceExpression>
+		<destinationExpression>Дата</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Данные</sourceDataSet>
+		<destinationDataSet>Норма</destinationDataSet>
+		<sourceExpression>Сотрудник</sourceExpression>
+		<destinationExpression>Сотрудник</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Данные</sourceDataSet>
+		<destinationDataSet>ВремяПрихода</destinationDataSet>
+		<sourceExpression>Дата</sourceExpression>
+		<destinationExpression>Дата</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Данные</sourceDataSet>
+		<destinationDataSet>ВремяПрихода</destinationDataSet>
+		<sourceExpression>Сотрудник</sourceExpression>
+		<destinationExpression>Сотрудник</destinationExpression>
+	</dataSetLink>
+	<calculatedField>
+		<dataPath>НеобоснованныеЧасы</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Необоснованные часы</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Unjustified hours</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>az</v8:lang>
+				<v8:content>Əsassız saatları</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>5</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ИтогНеобоснованныхЧасов</dataPath>
+		<expression>ВычислитьВыражениеСГруппировкойМассив("Сумма(НормаЧасов) - Сумма(ОбоснованныеЧасы)", "Сотрудник")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Итог необоснованных часов</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Total unjustified hours</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>az</v8:lang>
+				<v8:content>Cəmi əsassız saatları</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>5</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<totalField>
+		<dataPath>НеобоснованныеЧасы</dataPath>
+		<expression>Сумма(НормаЧасов) - Сумма(ОбоснованныеЧасы)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОбоснованныеЧасы</dataPath>
+		<expression>Сумма(ОбоснованныеЧасы)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НормаЧасов</dataPath>
+		<expression>Сумма(НормаЧасов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЧасыОтсутствия</dataPath>
+		<expression>Сумма(ЧасыОтсутствия)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЧасыПосещения</dataPath>
+		<expression>Сумма(ЧасыПосещения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИтогНеобоснованныхЧасов</dataPath>
+		<expression>Сумма(ИтогНеобоснованныхЧасов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДопустимыеЧасыБезОбоснований</dataPath>
+		<expression>Сумма(ДопустимыеЧасыБезОбоснований)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяПрихода</dataPath>
+		<expression>Максимум(ВремяПрихода)</expression>
+		<group>Сотрудник</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяУхода</dataPath>
+		<expression>Максимум(ВремяУхода)</expression>
+		<group>Сотрудник</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяПрихода</dataPath>
+		<expression>ДАТАВРЕМЯ(1,1,1)</expression>
+		<group>Организация</group>
+		<group>Подразделение</group>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяУхода</dataPath>
+		<expression>ДАТАВРЕМЯ(1,1,1)</expression>
+		<group>Организация</group>
+		<group>Подразделение</group>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаОкончания</expression>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаНачала</expression>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>СтандартныйПериод</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Period</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>az</v8:lang>
+				<v8:content>Dövr</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ПустаяДатаНачала</name>
+		<title xsi:type="xs:string">Пустая дата начала</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПустаяДатаОкончания</name>
+		<title xsi:type="xs:string">Пустая дата окончания</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>КонтрольРабочегоВремениСотрудников</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Контроль рабочего времени сотрудников</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Employee working time control</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>az</v8:lang>
+				<v8:content>Əməkdaşların iş vaxtın nəzarəti</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НормаЧасов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЧасыПосещения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяПрихода</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяУхода</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЧасыОтсутствия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбоснованныеЧасы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НеобоснованныеЧасы</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:Field"/>
+					<dcsset:userSettingID>d44b12ec-019f-451e-baec-5ff5aa6e0745</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>93777269-6488-4641-95e8-5780aae0de5c</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>СтандартныйПериод</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>19d41602-a219-4660-b449-d8e6166fead4</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Сотрудник.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>НеобоснованныеЧасы</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ИтогНеобоснованныхЧасов</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=2</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>ЧДЦ=2</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>ЧДЦ=2</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ВремяПрихода</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ВремяУхода</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=HH:mm:ss</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>ДФ=HH:mm:ss</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>az</v8:lang>
+									<v8:content>ДФ=HH:mm:ss</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контроль рабочего времени сотрудников</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Employee working time control</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>az</v8:lang>
+							<v8:content>Əməkdaşların iş vaxtın nəzarəti</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ДопустимыеЧасыБезОбоснований</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ИтогНеобоснованныхЧасов</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Дата</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Формат</dcscor:parameter>
+									<dcscor:value xsi:type="v8:LocalStringType">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Л=ru; ДФ='dd MMMM yyyy'</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Л=en; ДФ='dd MMMM yyyy'</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>az</v8:lang>
+											<v8:content>Л=az; ДФ='dd MMMM yyyy'</v8:content>
+										</v8:item>
+									</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Подразделение</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Сотрудник</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Должность</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:conditionalAppearance>
+							<dcsset:item>
+								<dcsset:selection>
+									<dcsset:item>
+										<dcsset:field>ИтогНеобоснованныхЧасов</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ИтогНеобоснованныхЧасов</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>ЦветФона</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">web:PaleGreen</dcscor:value>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:selection>
+									<dcsset:item>
+										<dcsset:field>ИтогНеобоснованныхЧасов</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ИтогНеобоснованныхЧасов</dcsset:left>
+										<dcsset:comparisonType>Greater</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>ЦветФона</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">web:LightGoldenRod</dcscor:value>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:selection>
+									<dcsset:item>
+										<dcsset:field>ИтогНеобоснованныхЧасов</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:filter>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ИтогНеобоснованныхЧасов</dcsset:left>
+										<dcsset:comparisonType>Greater</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:Field">ДопустимыеЧасыБезОбоснований</dcsset:right>
+									</dcsset:item>
+								</dcsset:filter>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>ЦветФона</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">web:LightSalmon</dcscor:value>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+						</dcsset:conditionalAppearance>
+					</dcsset:item>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
