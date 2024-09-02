@@ -46,7 +46,7 @@
 		<Metadata name="CommonPicture.КРВС_Посещаемость" id="66137403-e969-4708-846a-eb467cae809b" configVersion="277cf6b92556abcced31cc6ad78d58ae218a5f2b"/>
 		<Metadata name="CommonPicture.КРВС_Посещаемость.Picture" id="66137403-e969-4708-846a-eb467cae809b.0" configVersion="fcdef81ffa3921abffb47de7df3fa4c8280770c0"/>
 		<Metadata name="CommonPicture.Напоминание" id="8677ac26-06ea-459b-8004-fd12da52e501" configVersion="43713c5fc874bec7ff9c974b5611230ff55fc615"/>
-		<Metadata name="Configuration.КонтрольРабочегоВремениСотрудников" id="63c3fabb-3eeb-4cac-a426-82b0217a8ae3" configVersion="bf3db047526427c96be27fa40a058edcfed4ed0f"/>
+		<Metadata name="Configuration.КонтрольРабочегоВремениСотрудников" id="63c3fabb-3eeb-4cac-a426-82b0217a8ae3" configVersion="633c07ede83cea8e61ed15ee88ea53e64f55b918"/>
 		<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени" id="3fb002fc-15ab-468b-84f6-1f66ad454759" configVersion="c92aa1809f49423dd7b4de6b876a5518b12386a2">
 			<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.Attribute.Ответственный" id="0d447e12-537c-448e-a868-ff3bd88a9ec7"/>
 			<Metadata name="Document.КРВС_ОсвобождениеОтКонтроляРабочегоВремени.TabularSection.Сотрудники" id="37fba963-1460-4fe3-a0c4-ee3898c500a9"/>
@@ -194,15 +194,17 @@
 		<Metadata name="Language.Азербайджанский" id="1d4e64fc-87be-4652-bc78-4a55be6c3593" configVersion="0daf33b67d0f717e0e978c37b954cfc64dfac3e5"/>
 		<Metadata name="Language.Английский" id="21cb6192-8559-46b7-9f7b-acd4a91ea676" configVersion="4d2ba2348ab5eee52eae585c534ff0adca897e32"/>
 		<Metadata name="Language.Русский" id="f99f1e08-29a3-4a6c-8a11-d4640a9565ae" configVersion="c4e528642693ed540eb3d48c61c81c19bffdd174"/>
-		<Metadata name="Report.КРВС_КонтрольРабочегоВремениСотрудников" id="a207145c-8154-4b10-947a-021f429f09a3" configVersion="de13f26f4900173fb7720bd88db12886befb4db2"/>
+		<Metadata name="Report.КРВС_КонтрольРабочегоВремениСотрудников" id="a207145c-8154-4b10-947a-021f429f09a3" configVersion="00bb9e553182eef3646d7eb3124c1cb3647f2ca8"/>
+		<Metadata name="Report.КРВС_КонтрольРабочегоВремениСотрудников.ManagerModule" id="a207145c-8154-4b10-947a-021f429f09a3.2" configVersion="ff3bda506dc954cf2728e7e103bcfced2e45545e"/>
 		<Metadata name="Report.КРВС_КонтрольРабочегоВремениСотрудников.ObjectModule" id="a207145c-8154-4b10-947a-021f429f09a3.0" configVersion="7110ddf3e1f89da8492e053116a86011d4555a7b"/>
 		<Metadata name="Report.КРВС_КонтрольРабочегоВремениСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных" id="b0937408-7365-43bf-a162-1d67e9515c62" configVersion="65d4fab7fd446200f3fa01c0223e97f389dd0c81"/>
 		<Metadata name="Report.КРВС_КонтрольРабочегоВремениСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="b0937408-7365-43bf-a162-1d67e9515c62.0" configVersion="573717dbf0955ee735c28ec1ee8edf57ea4badab"/>
 		<Metadata name="Role.КРВС_ОсновнаяРоль" id="de7cafaf-3a80-4bb7-b19f-8424bdd95b1c" configVersion="e8e96f84b2cbd1ddf6e334ae34ab0ee0c8b7aadc"/>
+		<Metadata name="SettingsStorage.ХранилищеВариантовОтчетов" id="a38c06b3-5ac4-4f0b-ba1e-fcc774aa1970" configVersion="59357df755ee7871be5d00906d4868b60049305e"/>
 		<Metadata name="StyleItem.ВажнаяНадписьШрифт" id="d1fb9039-542e-4694-8f36-2c5ccb93c19d" configVersion="65f1ec77d55fa3177d148c7f84bcb00cbaf3679d"/>
 		<Metadata name="StyleItem.ПоясняющийТекст" id="edab760f-ff70-49e4-8475-ab25bc9815fe" configVersion="0ac16c2bdb6fffc5a65fac98c43a57cdd2c90c4a"/>
 		<Metadata name="Subsystem.Зарплата" id="59716c80-46ab-492c-a6f1-0bf697da7021" configVersion="6223fbf9744b91d033f8f4e3f4b1cc73d16b9d95"/>
-		<Metadata name="Subsystem.Зарплата.Subsystem.УчетРабочегоВремени" id="0174f0f3-6c65-43a2-b258-baeb150d5be9" configVersion="35bf7e0f6b48128b4197771f90e2ab95cc005adb"/>
+		<Metadata name="Subsystem.Зарплата.Subsystem.УчетРабочегоВремени" id="0174f0f3-6c65-43a2-b258-baeb150d5be9" configVersion="87020ab9fed62b136118e2b2a79ebf6bd83c8b8b"/>
 		<Metadata name="Subsystem.Зарплата.Subsystem.УчетРабочегоВремени.CommandInterface" id="0174f0f3-6c65-43a2-b258-baeb150d5be9.1" configVersion="60f2ad8881b67cc2bcc6aa3e61e57e2ec0734c83"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

@@ -93,6 +93,7 @@
 			<CommonModule>УчетРабочегоВремениРасширенныйКлиент</CommonModule>
 			<CommonModule>УчетРабочегоВремениРасширенныйФормы</CommonModule>
 			<EventSubscription>ЗаполнитьРеквизитыОбъекта</EventSubscription>
+			<SettingsStorage>ХранилищеВариантовОтчетов</SettingsStorage>
 			<Catalog>ВидыИспользованияРабочегоВремени</Catalog>
 			<Catalog>Организации</Catalog>
 			<Catalog>ПодразделенияОрганизаций</Catalog>
